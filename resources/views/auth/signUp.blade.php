@@ -68,7 +68,9 @@
                             </option>
                             <option value="A"
                                     @if(old('type')=='A') selected @endif
-                            >管理者</option>
+                            >
+                                管理者
+                            </option>
                         </select>
                     </div>
 
@@ -76,7 +78,7 @@
                     <button type="submit" class="btn btn-default">註冊</button>
 
                     {{-- CSRF 欄位--}}
-{{--                    {{ csrf_field() }}--}}
+                    {{ csrf_field() }}
                 </form>
             </div>
         </div>

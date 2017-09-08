@@ -107,9 +107,17 @@ return [
     |
     */
     'attributes'           => [
-        'nickname' => '暱稱',
-        'email' => '電子信箱',
-        'password' => '密碼',
+        // 會員
+        'nickname'              => '暱稱',
+        'email'                 => '電子信箱',
+        'password'              => '密碼',
         'password_confirmation' => '確認密碼',
+        // 商品
+        'name'            => '商品名稱',
+        'name_en'         => '商品英文名稱',
+        'introduction'    => '商品介紹',
+        'introduction_en' => '商品英文介紹',
+        'price'           => '商品價格',
+        'remain_count'    => '商品剩餘數量',
     ],
 ];

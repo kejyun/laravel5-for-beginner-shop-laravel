@@ -153,7 +153,10 @@ class UserAuthController extends Controller {
     
     // 處理登出資料
     public function signOut(){
+        // 清除 Session
         session()->forget('user_id');
+        
+        // 重新導向回首頁
         return redirect('/user/auth/sign-in');
     }
 }

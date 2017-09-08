@@ -167,7 +167,8 @@ return [
         /*
          * Package Service Providers...
          */
-
+        // PhpStorm IDE Helper 開發完可刪，使用 php artisan ide-helper:generate
+        // Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -176,6 +177,9 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+    
+        // 圖片處理
+        Intervention\Image\ImageServiceProvider::class,
 
     ],
 
@@ -225,7 +229,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        'Image' => Intervention\Image\Facades\Image::class,
     ],
 
 ];

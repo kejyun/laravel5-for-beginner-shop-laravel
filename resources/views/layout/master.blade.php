@@ -28,6 +28,13 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     @if(session()->has('user_id'))
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">商品 <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/merchandise/create">建立</a></li>
+                                <li><a href="/merchandise/manage">管理</a></li>
+                            </ul>
+                        </li>
                         <li><a href="/user/auth/sign-out">登出</a></li>
                     @else
                         <li><a href="/user/auth/sign-in">登入</a></li>
