@@ -24,21 +24,31 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="/">Home</a></li>
+                    <li><a href="/">{{ trans('shop.home') }}</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     @if(session()->has('user_id'))
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">商品 <span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                {{ trans('shop.transaction.name') }} <span class="caret"></span>
+                            </a>
                             <ul class="dropdown-menu">
-                                <li><a href="/merchandise/create">建立</a></li>
-                                <li><a href="/merchandise/manage">管理</a></li>
+                                <li><a href="/transaction">{{ trans('shop.transaction.list') }}</a></li>
                             </ul>
                         </li>
-                        <li><a href="/user/auth/sign-out">登出</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                {{ trans('shop.merchandise.name') }} <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/merchandise/create">{{ trans('shop.merchandise.create') }}</a></li>
+                                <li><a href="/merchandise/manage">{{ trans('shop.merchandise.manage') }}</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/user/auth/sign-out">{{ trans('shop.auth.sign-out') }}</a></li>
                     @else
-                        <li><a href="/user/auth/sign-in">登入</a></li>
-                        <li><a href="/user/auth/sign-up">註冊</a></li>
+                        <li><a href="/user/auth/sign-in">{{ trans('shop.auth.sign-in') }}</a></li>
+                        <li><a href="/user/auth/sign-up">{{ trans('shop.auth.sign-up') }}</a></li>
                     @endif
                 </ul>
             </div>

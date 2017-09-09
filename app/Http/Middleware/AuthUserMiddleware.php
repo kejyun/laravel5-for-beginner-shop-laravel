@@ -27,8 +27,8 @@ class AuthUserMiddleware
         }
     
         if (!$is_allow_access) {
-            // 若不允許存取，重新導向至首頁
-            return redirect()->to('/');
+            // 若不允許存取，重新導向至登入頁
+            return redirect()->to('/user/auth/sign-in');
         }
     
         // 允許存取，繼續做下個請求的處理
