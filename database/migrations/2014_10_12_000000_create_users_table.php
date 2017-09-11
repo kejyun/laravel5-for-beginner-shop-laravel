@@ -1,5 +1,5 @@
 <?php
-
+// 檔案位置：database/migrations/2014_10_12_000000_create_users_table.php
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;

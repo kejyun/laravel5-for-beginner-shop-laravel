@@ -48,6 +48,7 @@
                         <li><a href="/user/auth/sign-out">{{ trans('shop.auth.sign-out') }}</a></li>
                     @else
                         <li><a href="/user/auth/sign-in">{{ trans('shop.auth.sign-in') }}</a></li>
+                        <li><a href="/user/auth/facebook-sign-in">{{ trans('shop.auth.facebook-sign-in') }}</a></li>
                         <li><a href="/user/auth/sign-up">{{ trans('shop.auth.sign-up') }}</a></li>
                     @endif
                 </ul>

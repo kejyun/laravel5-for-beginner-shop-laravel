@@ -1,5 +1,5 @@
 <?php
-
+// 檔案位置：database/migrations/2017_08_20_061340_create_merchandise_table.php
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
