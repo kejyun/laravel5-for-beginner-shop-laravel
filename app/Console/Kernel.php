@@ -1,4 +1,5 @@
 <?php
+// 檔案位置：app/Console/Kernel.php
 
 namespace App\Console;
 
@@ -24,8 +25,9 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        // $schedule->command('inspire')
-        //          ->hourly();
+        $schedule->command('shop:sendLatestMerchandiseNewsletter')
+            ->fridays()
+            ->dailyAt('18:00');
     }
 
     /**

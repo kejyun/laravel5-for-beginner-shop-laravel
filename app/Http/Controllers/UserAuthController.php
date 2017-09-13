@@ -3,6 +3,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\SendSignUpMailJob;
 use Mail;
 use Socialite;
 use Validator;  // 驗證器
@@ -74,14 +75,13 @@ class UserAuthController extends Controller {
     
         // 寄送註冊通知信
         $mail_binding = [
-            'nickname' => $input['nickname']
+            'nickname' => $input['nickname'],
+            'email' => $input['email'],
         ];
     
-        Mail::send('email.signUpEmailNotification', $mail_binding, function($mail) use ($input){
-            $mail->to($input['email']);
-            $mail->from('kejyun@gmail.com');
-            $mail->subject('恭喜註冊 Shop Laravel 成功');
-        });
+        SendSignUpMailJob::dispatch($mail_binding)
+            ->onQueue('high');
+        
         // 重新導向到登入頁
         return redirect('/user/auth/sign-in');
     }
@@ -231,14 +231,12 @@ class UserAuthController extends Controller {
     
             // 寄送註冊通知信
             $mail_binding = [
-                'nickname' => $input['nickname']
+                'nickname' => $input['nickname'],
+                'email' => $input['email'],
             ];
-            
-            Mail::send('email.signUpEmailNotification', $mail_binding, function($mail) use ($input){
-                $mail->to($input['email']);
-                $mail->from('kejyun@gmail.com');
-                $mail->subject('恭喜註冊 Shop Laravel 成功');
-            });
+    
+            SendSignUpMailJob::dispatch($mail_binding)
+                ->onQueue('high');
         }
     
         // 登入會員
