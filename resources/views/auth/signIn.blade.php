@@ -18,26 +18,26 @@
             <div class="col-md-12">
                 <form action="/user/auth/sign-in" method="post">
                     <div class="form-group">
-                        <label for="email">Email</label>
+                        <label for="email">{{ trans('shop.user.fields.email') }}</label>
                         <input type="text"
                                class="form-control"
                                id="email"
                                name="email"
-                               placeholder="Email"
+                               placeholder="{{ trans('shop.user.fields.email') }}"
                                value="{{ old('email') }}"
                         >
                     </div>
                     <div class="form-group">
-                        <label for="password">密碼</label>
+                        <label for="password">{{ trans('shop.user.fields.password') }}</label>
                         <input type="password"
                                class="form-control"
                                id="password"
                                name="password"
-                               placeholder="密碼"
+                               placeholder="{{ trans('shop.user.fields.password') }}"
                         >
                     </div>
 
-                    <button type="submit" class="btn btn-default">登入</button>
+                    <button type="submit" class="btn btn-default">{{ trans('shop.auth.sign-in') }}</button>
 
                     {{-- CSRF 欄位--}}
                     {{ csrf_field() }}

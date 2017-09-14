@@ -24,7 +24,7 @@
                     {{ method_field('PUT') }}
 
                     <div class="form-group">
-                        <label for="type">商品狀態</label>
+                        <label for="type">{{ trans('shop.merchandise.fields.status-name') }}</label>
                         <select class="form-control"
                                 name="status"
                                 id="status"
@@ -32,87 +32,87 @@
                             <option value="C"
                                     @if(old('status', $Merchandise->status)=='C') selected @endif
                             >
-                                建立中
+                                {{ trans('shop.merchandise.fields.status.create') }}
                             </option>
                             <option value="S"
                                     @if(old('status', $Merchandise->status)=='S') selected @endif
                             >
-                                可販售
+                                {{ trans('shop.merchandise.fields.status.sell') }}
                             </option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="name">商品名稱</label>
+                        <label for="name">{{ trans('shop.merchandise.fields.name') }}</label>
                         <input type="text"
                                class="form-control"
                                id="name"
                                name="name"
-                               placeholder="商品名稱"
+                               placeholder="{{ trans('shop.merchandise.fields.name') }}"
                                value="{{ old('name', $Merchandise->name) }}"
                         >
                     </div>
                     <div class="form-group">
-                        <label for="name_en">商品英文名稱</label>
+                        <label for="name_en">{{ trans('shop.merchandise.fields.name-en') }}</label>
                         <input type="text"
                                class="form-control"
                                id="name_en"
                                name="name_en"
-                               placeholder="商品英文名稱"
+                               placeholder="{{ trans('shop.merchandise.fields.name-en') }}"
                                value="{{ old('name_en', $Merchandise->name_en) }}"
                         >
                     </div>
                     <div class="form-group">
-                        <label for="introduction">商品介紹</label>
+                        <label for="introduction">{{ trans('shop.merchandise.fields.introduction') }}</label>
                         <input type="text"
                                class="form-control"
                                id="introduction"
                                name="introduction"
-                               placeholder="商品介紹"
+                               placeholder="{{ trans('shop.merchandise.fields.introduction') }}"
                                value="{{ old('introduction', $Merchandise->introduction) }}"
                         >
                     </div>
                     <div class="form-group">
-                        <label for="introduction_en">商品英文介紹</label>
+                        <label for="introduction_en">{{ trans('shop.merchandise.fields.introduction-en') }}</label>
                         <input type="text"
                                class="form-control"
                                id="introduction_en"
                                name="introduction_en"
-                               placeholder="商品英文介紹"
+                               placeholder="{{ trans('shop.merchandise.fields.introduction-en') }}"
                                value="{{ old('introduction_en', $Merchandise->introduction_en) }}"
                         >
                     </div>
                     <div class="form-group">
-                        <label for="photo">商品照片</label>
+                        <label for="photo">{{ trans('shop.merchandise.fields.photo') }}</label>
                         <input type="file"
                                class="form-control"
                                id="photo"
                                name="photo"
-                               placeholder="商品照片"
+                               placeholder="{{ trans('shop.merchandise.fields.photo') }}"
                         >
                         <img src="{{ $Merchandise->photo or '/assets/images/default-merchandise.png' }}" />
                     </div>
 
                     <div class="form-group">
-                        <label for="price">商品價格</label>
+                        <label for="price">{{ trans('shop.merchandise.fields.price') }}</label>
                         <input type="text"
                                class="form-control"
                                id="price"
                                name="price"
-                               placeholder="商品價格"
+                               placeholder="{{ trans('shop.merchandise.fields.price') }}"
                                value="{{ old('price', $Merchandise->price) }}"
                         >
                     </div>
                     <div class="form-group">
-                        <label for="remain_count">商品剩餘數量</label>
+                        <label for="remain_count">{{ trans('shop.merchandise.fields.remain-count') }}</label>
                         <input type="text"
                                class="form-control"
                                id="remain_count"
                                name="remain_count"
-                               placeholder="商品剩餘數量"
+                               placeholder="{{ trans('shop.merchandise.fields.remain-count') }}"
                                value="{{ old('remain_count', $Merchandise->remain_count) }}"
                         >
                     </div>
-                    <button type="submit" class="btn btn-default">更新商品資訊</button>
+                    <button type="submit" class="btn btn-default">{{ trans('shop.merchandise.update') }}</button>
                     {{-- CSRF 欄位--}}
                     {{ csrf_field() }}
                 </form>

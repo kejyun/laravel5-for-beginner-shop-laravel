@@ -18,45 +18,45 @@
             <div class="col-md-12">
                 <form action="/user/auth/sign-up" method="post">
                     <div class="form-group">
-                        <label for="nickname">暱稱</label>
+                        <label for="nickname">{{ trans('shop.user.fields.nickname') }}</label>
                         <input type="text"
                                class="form-control"
                                id="nickname"
                                name="nickname"
-                               placeholder="暱稱"
+                               placeholder="{{ trans('shop.user.fields.nickname') }}"
                                value="{{ old('nickname') }}"
                         >
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
+                        <label for="email">{{ trans('shop.user.fields.email') }}</label>
                         <input type="text"
                                class="form-control"
                                id="email"
                                name="email"
-                               placeholder="Email"
+                               placeholder="{{ trans('shop.user.fields.email') }}"
                                value="{{ old('email') }}"
                         >
                     </div>
                     <div class="form-group">
-                        <label for="password">密碼</label>
+                        <label for="password">{{ trans('shop.user.fields.password') }}</label>
                         <input type="password"
                                class="form-control"
                                id="password"
                                name="password"
-                               placeholder="密碼"
+                               placeholder="{{ trans('shop.user.fields.password') }}"
                         >
                     </div>
                     <div class="form-group">
-                        <label for="password">確認密碼</label>
+                        <label for="password">{{ trans('shop.user.fields.confirm-password') }}</label>
                         <input type="password"
                                class="form-control"
                                id="password"
                                name="password_confirmation"
-                               placeholder="確認密碼"
+                               placeholder="{{ trans('shop.user.fields.confirm-password') }}"
                         >
                     </div>
                     <div class="form-group">
-                        <label for="type">帳號類型</label>
+                        <label for="type">{{ trans('shop.user.fields.type-name') }}</label>
                         <select class="form-control"
                                 name="type"
                                 id="type"
@@ -64,18 +64,18 @@
                             <option value="G"
                                     @if(old('type')=='G') selected @endif
                             >
-                                一般會員
+                                {{ trans('shop.user.fields.type.general') }}
                             </option>
                             <option value="A"
                                     @if(old('type')=='A') selected @endif
                             >
-                                管理者
+                                {{ trans('shop.user.fields.type.admin') }}
                             </option>
                         </select>
                     </div>
 
 
-                    <button type="submit" class="btn btn-default">註冊</button>
+                    <button type="submit" class="btn btn-default">{{ trans('shop.auth.sign-up') }}</button>
 
                     {{-- CSRF 欄位--}}
                     {{ csrf_field() }}

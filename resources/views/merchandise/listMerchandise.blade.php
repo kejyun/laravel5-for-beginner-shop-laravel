@@ -18,10 +18,10 @@
             <div class="col-md-12">
                 <table class="table">
                     <tr>
-                        <th>名稱</th>
-                        <th>照片</th>
-                        <th>價格</th>
-                        <th>剩餘數量</th>
+                        <th>{{ trans('shop.merchandise.fields.name') }}</th>
+                        <th>{{ trans('shop.merchandise.fields.photo') }}</th>
+                        <th>{{ trans('shop.merchandise.fields.price') }}</th>
+                        <th>{{ trans('shop.merchandise.fields.remain-count') }}</th>
                     </tr>
                     @foreach($MerchandisePaginate as $Merchandise)
                         <tr>

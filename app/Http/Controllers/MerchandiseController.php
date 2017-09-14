@@ -51,7 +51,7 @@ class MerchandiseController extends Controller {
         }
         
         $binding = [
-            'title' => '編輯商品',
+            'title' => trans('shop.merchandise.edit'),
             'Merchandise'=> $Merchandise,
         ];
         return view('merchandise.editMerchandise', $binding);
@@ -165,7 +165,7 @@ class MerchandiseController extends Controller {
         }
         
         $binding = [
-            'title' => '管理商品',
+            'title' => trans('shop.merchandise.manage'),
             'MerchandisePaginate'=> $MerchandisePaginate,
         ];
         
@@ -191,7 +191,7 @@ class MerchandiseController extends Controller {
         }
         
         $binding = [
-            'title' => '商品列表',
+            'title' => trans('shop.merchandise.list'),
             'MerchandisePaginate'=> $MerchandisePaginate,
         ];
         
@@ -210,7 +210,7 @@ class MerchandiseController extends Controller {
         }
         
         $binding = [
-            'title' => '商品頁',
+            'title' => trans('shop.merchandise.page'),
             'Merchandise'=> $Merchandise,
         ];
         return view('merchandise.showMerchandise', $binding);
@@ -282,7 +282,7 @@ class MerchandiseController extends Controller {
             // 回傳購物成功訊息
             $message = [
                 'msg' => [
-                    '購買成功',
+                    trans('shop.merchandise.purchase-success'),
                 ],
             ];
             return redirect()

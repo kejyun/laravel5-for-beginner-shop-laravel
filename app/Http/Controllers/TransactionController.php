@@ -27,7 +27,7 @@ class TransactionController extends Controller {
         }
     
         $binding = [
-            'title' => '交易紀錄',
+            'title' => trans('shop.transaction.list'),
             'TransactionPaginate'=> $TransactionPaginate,
         ];
     

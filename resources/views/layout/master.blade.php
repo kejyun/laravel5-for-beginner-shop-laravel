@@ -5,6 +5,8 @@
         <title>@yield('title') - Shop Laravel</title>
         <script src="/assets/js/jquery-2.2.4.min.js" defer></script>
         <script src="/assets/js/bootstrap.min.js" defer></script>
+        <script src="/assets/js/js.cookie.js" defer></script>
+        <script src="/assets/js/shop-laravel.js" defer></script>
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
         <link rel="stylesheet" href="/assets/css/shop_laravel.css">
@@ -27,6 +29,17 @@
                     <li><a href="/">{{ trans('shop.home') }}</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">
+                            <span class="set_language" data-language="zh-TW">
+                                中文
+                            </span>
+                            /
+                            <span class="set_language" data-language="en">
+                                English
+                            </span>
+                        </a>
+                    </li>
                     @if(session()->has('user_id'))
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">

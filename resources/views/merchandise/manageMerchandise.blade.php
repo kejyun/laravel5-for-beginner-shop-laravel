@@ -18,13 +18,13 @@
             <div class="col-md-12">
                 <table class="table">
                     <tr>
-                        <th>編號</th>
-                        <th>名稱</th>
-                        <th>圖片</th>
-                        <th>狀態</th>
-                        <th>價格</th>
-                        <th>剩餘數量</th>
-                        <th>編輯</th>
+                        <th>{{ trans('shop.merchandise.fields.id') }}</th>
+                        <th>{{ trans('shop.merchandise.fields.name') }}</th>
+                        <th>{{ trans('shop.merchandise.fields.photo') }}</th>
+                        <th>{{ trans('shop.merchandise.fields.status-name') }}</th>
+                        <th>{{ trans('shop.merchandise.fields.price') }}</th>
+                        <th>{{ trans('shop.merchandise.fields.remain-count') }}</th>
+                        <th>{{ trans('shop.merchandise.edit') }}</th>
                     </tr>
                     @foreach($MerchandisePaginate as $Merchandise)
                         <tr>
@@ -35,9 +35,13 @@
                             </td>
                             <td>
                                 @if($Merchandise->status == 'C')
-                                    <span class="label label-default">建立中</span>
+                                    <span class="label label-default">
+                                        {{ trans('shop.merchandise.fields.status.create') }}
+                                    </span>
                                 @else
-                                    <span class="label label-success">可販售</span>
+                                    <span class="label label-success">
+                                        {{ trans('shop.merchandise.fields.status.sell') }}
+                                    </span>
                                 @endif
                             </td>
                             <td> {{ $Merchandise->price }}</td>
