@@ -13,6 +13,7 @@ class CreateMerchandiseTable extends Migration
      */
     public function up()
     {
+        // 建立資料表
         Schema::create('merchandise', function (Blueprint $table) {
             // 商品編號
             $table->increments('id');
@@ -49,6 +50,7 @@ class CreateMerchandiseTable extends Migration
      */
     public function down()
     {
+        // 移除資料表
         Schema::dropIfExists('merchandise');
     }
 }

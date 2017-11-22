@@ -1,4 +1,5 @@
 <?php
+// 檔案位置: config/cache.php
 
 return [
 

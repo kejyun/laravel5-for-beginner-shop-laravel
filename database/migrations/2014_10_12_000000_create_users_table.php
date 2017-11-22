@@ -13,6 +13,7 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
+        // 建立資料表
         Schema::create('users', function (Blueprint $table) {
             // 會員編號
             $table->increments('id');
@@ -41,6 +42,7 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
+        // 移除資料表
         Schema::dropIfExists('users');
     }
 }

@@ -1,4 +1,5 @@
 <?php
+// 檔案位置：app/Http/Middleware/DetectLanguageMiddleware.php
 
 namespace App\Http\Middleware;
 
