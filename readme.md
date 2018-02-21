@@ -1,53 +1,106 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
-
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
-
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](http://patreon.com/taylorotwell):
-
-- **[Vehikl](http://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Styde](https://styde.net)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+<table>
+    <tr>
+        <th colspan="2">
+            <h2 style="font-size:22px;">
+                KeJyun 最新新書推薦<br>Laravel 5 for beginner 新手道場：優雅運用框架快速開發 PHP 網站
+            </h2>
+        </th>
+    </tr>
+    <tr>
+        <td style="width:30%;">
+            <img src="https://i.imgur.com/RYcmwgY.png" alt"Laravel 5 for beginner 新手道場：優雅運用框架快速開發 PHP 網站" />
+        </td>
+        <td>
+            <p>Laravel 是 PHP 的框架（Framework），提供了很多開發網站或 API 所需的工具及環境，經過簡單的設定就可以完成資料的處理及顯示，使開發者可以很優雅且快速的開發出各個不同的產品。本書適合有 PHP 基礎的人，但不知道要怎麼選擇框架，或者不用框架的人也能夠明白它的好處。</p>
+            <p>雖然 WordPress 也能夠架站，但如果有客製化需求，要開發各式各樣的網站，或提供 App 使用的 API，如此一來你只能選擇用框架，而 Laravel 是目前最受歡迎的。</p>
+            <p>本書將解說為什麼要使用框架，以及理解框架的優缺點後，要怎麼選擇框架，並用框架快速建構一個網站。除非必要，否則書中會避免專業技術用語，盡量使用最生活化易懂的例子及語氣，讓大家更容易進入 Laravel 的世界。</p>
+            <p>
+                <h3 style="font-size:16px;">
+                    購書連結
+                </h3>
+                <ul>
+                    <li>
+                        <a href="https://goo.gl/Juv97M"
+                            target="_blank"
+                            alt="博客來-Laravel 5 for beginner 新手道場：優雅運用框架快速開發 PHP 網站"
+                        >
+                            博客來
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://goo.gl/Ym73kH"
+                            target="_blank"
+                            alt="Laravel 5 for beginner 新手道場：優雅運用框架快速開發 PHP 網站-金石堂網路書店"
+                        >
+                            金石堂網路書店
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://goo.gl/hMnBCs"
+                            target="_blank"
+                            alt="Laravel 5 for beginner 新手道場：優雅運用框架快速開發 PHP 網站- TAAZE 讀冊生活"
+                        >
+                            TAAZE 讀冊生活
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://goo.gl/QiRqXo"
+                            target="_blank"
+                            alt="Laravel 5 for beginner 新手道場：優雅運用框架快速開發 PHP 網站 - PChome 24h書店"
+                        >
+                            PCHome 24h書店
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://goo.gl/fa5dWf"
+                            target="_blank"
+                            alt="天瓏網路書店-Laravel 5 for beginner 新手道場：優雅運用框架快速開發 PHP 網站"
+                        >
+                            天瓏網路書店
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://goo.gl/nGhPnU"
+                            target="_blank"
+                            alt="Laravel 5 for beginner 新手道場－－優雅運用框架快速開發 PHP 網站"
+                        >
+                            商務印書館網上書店
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://goo.gl/RptkyY"
+                            target="_blank"
+                            alt="Laravel 5 for beginner 新手道場：優雅運用框架快速開發 PHP 網站-洪可郡 - 三民網路書店"
+                        >
+                            三民網路書店
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://goo.gl/5dXGQ8"
+                            target="_blank"
+                            alt="Laravel 5 for beginner 新手道場：優雅運用框架快速開發 PHP 網站, 城邦阅读花园 - 马来西亚最大网路书店"
+                        >
+                            城邦阅读花园
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://goo.gl/6Zy8yK"
+                            target="_blank"
+                            alt="華文網網路書店：Laravel 5 for beginner 新手道場：優雅運用框架快速開發 PHP 網站．電腦與網路/程式語言◎知．識．服．務．新．思．路◎"
+                        >
+                            華文網網路書店
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://goo.gl/o9msPz"
+                            target="_blank"
+                            alt="新絲路網路書店-Laravel 5 for beginner 新手道場：優雅運用框架快速開發 PHP 網站．電腦與網路/程式語言"
+                        >
+                            新絲路網路書店
+                        </a>
+                    </li>
+                </ul>
+            </p>
+        </td>
+    </tr>
+</table>
