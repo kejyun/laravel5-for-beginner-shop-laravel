@@ -5,7 +5,7 @@ return [
     'home'        => '首页',
     'transaction' => [
         'name'   => '交易',
-        'list'   => '交易纪录',
+        'list'   => '交易记录',
         'buy'    => '购买',
         'fields' => [
             'buy-count' => '购买数量',
@@ -19,13 +19,13 @@ return [
         'list'             => '商品列表',
         'page'             => '商品页',
         'purchase-success' => '购买成功',
-        'update'           => '更新商品资讯',
+        'update'           => '更新商品信息',
         'fields'           => [
             'id'              => '编号',
             'status-name'     => '商品状态',
             'status'          => [
                 'create' => '建立中',
-                'sell'   => '可贩售',
+                'sell'   => '可销售',
             ],
             'name'            => '商品名称',
             'name-en'         => '商品英文名称',
@@ -37,11 +37,11 @@ return [
         ],
     ],
     'auth'        => [
-        'sign-out'         => '登出',
-        'sign-in'          => '登入',
+        'sign-out'         => '退出',
+        'sign-in'          => '登录',
         'sign-up'          => '注册',
-        'github-sign-in'   => 'Github 登入',
-        'facebook-sign-in' => 'Facebook 登入',
+        'github-sign-in'   => 'Github 登录',
+        'facebook-sign-in' => 'Facebook 登录',
     ],
     'user'        => [
         'fields' => [
