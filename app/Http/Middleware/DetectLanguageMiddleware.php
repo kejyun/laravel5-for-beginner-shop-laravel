@@ -24,6 +24,7 @@ class DetectLanguageMiddleware
             case 'en':
                 app()->setLocale('en');
                 break;
+            // 語系指定為繁體中文
             case 'zh-CN':
                 app()->setLocale('zh-CN');
                 break;
