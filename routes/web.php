@@ -16,6 +16,10 @@ Route::group(['prefix' => 'user'], function(){
         Route::get('/facebook-sign-in', 'UserAuthController@facebookSignInProcess');
         // Facebook 登入重新導向授權資料處理
         Route::get('/facebook-sign-in-callback', 'UserAuthController@facebookSignInCallbackProcess');
+        // Github 登入
+        Route::get('/github-sign-in', 'UserAuthController@githubSignInProcess');
+        // Github 登入重新導向授權資料處理
+        Route::get('/github-sign-in-callback', 'UserAuthController@githubSignInCallbackProcess');
     });
 });
 

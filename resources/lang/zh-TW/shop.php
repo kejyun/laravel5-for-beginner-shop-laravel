@@ -40,6 +40,7 @@ return [
         'sign-out'         => '登出',
         'sign-in'          => '登入',
         'sign-up'          => '註冊',
+        'github-sign-in'   => 'Github 登入',
         'facebook-sign-in' => 'Facebook 登入',
     ],
     'user'        => [

@@ -39,6 +39,7 @@ return [
         'sign-out'         => 'Sign Out',
         'sign-in'          => 'Sign In',
         'sign-up'          => 'Sign Up',
+        'github-sign-in'   => 'Github Sign In',
         'facebook-sign-in' => 'Facebook Sign In',
     ],
     'user'        => [
