@@ -31,13 +31,17 @@
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     <a href="#">
-                            <span class="set_language" data-language="zh-TW">
-                                中文
-                            </span>
+                        <span class="set_language" data-language="zh-TW">
+                            繁體中文
+                        </span>
+                        /
+                        <span class="set_language" data-language="zh-CN">
+                            简体中文
+                        </span>
                         /
                         <span class="set_language" data-language="en">
-                                English
-                            </span>
+                            English
+                        </span>
                     </a>
                 </li>
                 @if(session()->has('user_id'))
