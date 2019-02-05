@@ -103,4 +103,75 @@
             </p>
         </td>
     </tr>
+
+    <tr>
+        <td style="width:30%;">
+            <img src="https://i.imgur.com/fu6MLoL.jpg" alt"Laravel框架开发详解：从零基础到运用框架快速开发PHP网站" />
+        </td>
+        <td>
+            <p>
+                <h3 style="font-size:16px;">
+                    購書連結
+                </h3>
+                <ul>
+                    <li>
+                        <a href="http://bit.ly/2EneIxw"
+                            target="_blank"
+                            alt="Laravel框架开发详解：从零基础到运用框架快速开发PHP网站 北京大学出版社"
+                        >
+                            北京大学出版社
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://bit.ly/2zSxOI2"
+                            target="_blank"
+                            alt="Laravel框架开发详解：从零基础到运用框架快速开发PHP网站 天瓏網路書店"
+                        >
+                            天瓏網路書店
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://amzn.to/2RKeN1y"
+                            target="_blank"
+                            alt="Laravel框架开发详解：从零基础到运用框架快速开发PHP网站 Amazon"
+                        >
+                            Amazon
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://bit.ly/2ru0qmu"
+                            target="_blank"
+                            alt="Laravel框架开发详解：从零基础到运用框架快速开发PHP网站 蓝墨水图书专营店"
+                        >
+                            蓝墨水图书专营店
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://bit.ly/2Qnrjao"
+                            target="_blank"
+                            alt="Laravel框架开发详解：从零基础到运用框架快速开发PHP网站 天猫"
+                        >
+                            天猫
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://bit.ly/2PstkNn"
+                            target="_blank"
+                            alt="Laravel框架开发详解：从零基础到运用框架快速开发PHP网站 三民網路書店"
+                        >
+                            三民網路書店
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://bit.ly/2E7jbnk"
+                            target="_blank"
+                            alt="Laravel框架开发详解：从零基础到运用框架快速开发PHP网站 博客來"
+                        >
+                            博客來
+                        </a>
+                    </li>
+                </ul>
+            </p>
+        </td>
+    </tr>
 </table>
