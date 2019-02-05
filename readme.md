@@ -103,7 +103,6 @@
             </p>
         </td>
     </tr>
-
     <tr>
         <td style="width:30%;">
             <img src="https://i.imgur.com/fu6MLoL.jpg" alt"Laravel框架开发详解：从零基础到运用框架快速开发PHP网站" />
